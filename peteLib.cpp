@@ -11,7 +11,7 @@ g++ -shared -o peteLib.dll peteLib.o
 To link to an execuable written in C++
 --------------------------------------
 
-g++ main.cpp -Link peteLib.dll
+g++ main.cpp -Link peteLib.dll -o main.exe
 
 */
 
