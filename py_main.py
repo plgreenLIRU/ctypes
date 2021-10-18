@@ -1,7 +1,7 @@
 import ctypes
 from numpy.ctypeslib import ndpointer
 
-lib_name = "C:\work\cpp\dynamic_lib\experiment3\peteLib.dll"
+lib_name = "C:\work\ctypes\peteLib.dll"
 c_lib = ctypes.CDLL(lib_name)
 ##c_lib.add.restype = ndpointer(dtype=ctypes.c_int, shape=(3,))
 
