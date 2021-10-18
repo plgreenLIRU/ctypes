@@ -1,16 +1,5 @@
-//#include "peteLib.h"
+#include "peteLib.h"
 #include <iostream>
-
-int* add(int x[], int y[]){
-
-	static int z[3];
-
-	for (int i=0; i<3; i++){
-		z[i] = x[i] + y[i];
-	}
-	
-	return z;
-}
 
 int main(){
 

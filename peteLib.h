@@ -1,1 +1,1 @@
-extern "C" int[] add(int[], int[]);
+extern "C" int* add(int[], int[]);

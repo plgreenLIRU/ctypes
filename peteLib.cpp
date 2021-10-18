@@ -15,11 +15,13 @@ g++ main.cpp -Link peteLib.dll
 
 */
 
-void add(int x[], int y[]){
+int* add(int x[], int y[]){
 
-	// Summation
-	for(int i=0; i<3; i++){
-		std::cout << x[i] + y[i] << std::endl;
+	static int z[3];
+
+	for (int i=0; i<3; i++){
+		z[i] = x[i] + y[i];
 	}
-
+	
+	return z;
 }
