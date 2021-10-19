@@ -2,10 +2,11 @@
 #include "peteLib.h"
 
 /*
-To complie and link to peteLib.dll
---------------------------------------
+Code illustrating how peteLib.dll can be used from C++. To complie and link to
+peteLib.dll:
 
 g++ main.cpp -Link peteLib.dll -o main.exe
+
 */
 
 int main(){
