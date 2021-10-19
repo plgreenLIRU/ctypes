@@ -1,15 +1,24 @@
-#include "peteLib.h"
 #include <iostream>
+#include "peteLib.h"
+
+/*
+Code illustrating how peteLib.dll can be used from C++. To complie and link to
+peteLib.dll:
+
+g++ main.cpp -Link peteLib.dll -o main.exe
+
+*/
 
 int main(){
 
-	int x[3] = {1, 2, 3};
-	int y[3] = {0, 4, 1};
-	int* z;
-	
-	z = add(x, y);
+	const int N = 5;
+	int x[N] = {1, 2, 3, 4, 5};
+	int y[N] = {0, 4, 1, -2, -5};
+	int z[N];
 
-	for (int i=0; i<3; i++){
+	add(x, y, z, N);
+
+	for (int i=0; i<N; i++){
 		std::cout << z[i] << std::endl;
 	}
 
