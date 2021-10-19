@@ -11,7 +11,7 @@ c_lib = ctypes.CDLL(lib_name)
 N = 4
 x = np.array([1, 2, 10, -1])
 y = np.array([0, 4, 1, 1])
-z = np.array([0, 0, 0, 0])
+z = np.zeros([N], dtype=int)
 
 # Define results type
 c_lib.add.argtypes = [ndpointer(dtype=ctypes.c_int, shape=(N,)), 
