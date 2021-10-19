@@ -7,13 +7,15 @@ lib_name = "C:\work\ctypes\peteLib.dll"
 c_lib = ctypes.CDLL(lib_name)
 
 
-# Define arrays of size N
+# Define arrays of, size N, that we want to add together
 N = 4
 x = np.array([1, 2, 10, -1])
 y = np.array([0, 4, 1, 1])
+
+# Initalise solution array, where we'll store x+y
 z = np.zeros([N], dtype=int)
 
-# Define results type
+# Define input types
 c_lib.add.argtypes = [ndpointer(dtype=ctypes.c_int, shape=(N,)), 
                       ndpointer(dtype=ctypes.c_int, shape=(N,)),
                       ndpointer(dtype=ctypes.c_int, shape=(N,))]
