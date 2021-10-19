@@ -1,5 +1,5 @@
-#include "peteLib.h"
 #include <iostream>
+#include "peteLib.h"
 
 /*
 To compile
@@ -15,13 +15,10 @@ g++ main.cpp -Link peteLib.dll -o main.exe
 
 */
 
-int* add(int x[], int y[]){
+void add(int x[], int y[], int z[], int N){
 
-	static int z[3];
-
-	for (int i=0; i<3; i++){
+	for (int i=0; i<N; i++){
 		z[i] = x[i] + y[i];
 	}
-	
-	return z;
+
 }
