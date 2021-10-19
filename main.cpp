@@ -1,6 +1,13 @@
 #include <iostream>
 #include "peteLib.h"
 
+/*
+To complie and link to peteLib.dll
+--------------------------------------
+
+g++ main.cpp -Link peteLib.dll -o main.exe
+*/
+
 int main(){
 
 	const int N = 5;

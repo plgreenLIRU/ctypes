@@ -16,11 +16,10 @@ y = np.array([0, 4, 1, 1])
 z = np.zeros([N], dtype=int)
 
 # Define input types
-c_lib.add.argtypes = [ndpointer(dtype=ctypes.c_int, shape=(N,)), 
+c_lib.add.argtypes = [ndpointer(dtype=ctypes.c_int, shape=(N,)),
                       ndpointer(dtype=ctypes.c_int, shape=(N,)),
                       ndpointer(dtype=ctypes.c_int, shape=(N,)),
                       ctypes.c_int]
-
 
 # Add arrays together
 c_lib.add(x, y, z, N)
