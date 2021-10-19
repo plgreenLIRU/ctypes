@@ -3,6 +3,15 @@ import numpy as np
 from numpy.ctypeslib import ndpointer
 import time
 
+"""
+An experiment to see how long each approach takes, specifically comparing:
+
+1. Calling the peteLib library
+2. Using a naive Python loop
+3. Calling a numpy routine
+
+"""
+
 # Import library
 lib_name = "C:\work\ctypes\peteLib.dll"
 c_lib = ctypes.CDLL(lib_name)

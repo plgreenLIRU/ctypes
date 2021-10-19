@@ -2,6 +2,11 @@ import ctypes
 import numpy as np
 from numpy.ctypeslib import ndpointer
 
+"""
+Here we simply create two numpy arrays and add them together using the peteLib
+library, which was compiled from C++.
+"""
+
 # Import library
 lib_name = "C:\work\ctypes\peteLib.dll"
 c_lib = ctypes.CDLL(lib_name)
