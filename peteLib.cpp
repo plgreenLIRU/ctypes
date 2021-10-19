@@ -11,15 +11,17 @@ g++ -shared -o peteLib.dll peteLib.o
 To link to an execuable written in C++
 --------------------------------------
 
-g++ main.cpp -Link peteLib.dll
+g++ main.cpp -Link peteLib.dll -o main.exe
 
 */
 
-void add(int x[], int y[]){
+int* add(int x[], int y[]){
 
-	// Summation
-	for(int i=0; i<3; i++){
-		std::cout << x[i] + y[i] << std::endl;
+	static int z[3];
+
+	for (int i=0; i<3; i++){
+		z[i] = x[i] + y[i];
 	}
-
+	
+	return z;
 }
