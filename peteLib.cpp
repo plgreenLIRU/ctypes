@@ -11,7 +11,7 @@ g++ -shared -o peteLib.dll peteLib.o
 
 */
 
-void add(int x[], int y[], int z[], int N){
+void add(float x[], float y[], float z[], int N){
 	/*
 	Description
 	-----------

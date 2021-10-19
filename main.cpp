@@ -12,9 +12,9 @@ g++ main.cpp -Link peteLib.dll -o main.exe
 int main(){
 
 	const int N = 5;
-	int x[N] = {1, 2, 3, 4, 5};
-	int y[N] = {0, 4, 1, -2, -5};
-	int z[N];
+	float x[N] = {1.1, 2.5, 3.0, 4.2, 5.5};
+	float y[N] = {0, 4.2, 1, -2.4, -5.5};
+	float z[N];
 
 	add(x, y, z, N);
 
