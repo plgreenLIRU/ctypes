@@ -12,3 +12,6 @@ dll extension as this was written in Windows).
 
 ## The usual warning
 This was made as a learning exercise i.e. could be wrong :)
+
+## Updates
+- Now processes 32 bit floating point numbers instead of integers.
