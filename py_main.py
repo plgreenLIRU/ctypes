@@ -18,11 +18,12 @@ z = np.zeros([N], dtype=int)
 # Define input types
 c_lib.add.argtypes = [ndpointer(dtype=ctypes.c_int, shape=(N,)), 
                       ndpointer(dtype=ctypes.c_int, shape=(N,)),
-                      ndpointer(dtype=ctypes.c_int, shape=(N,))]
+                      ndpointer(dtype=ctypes.c_int, shape=(N,)),
+                      ctypes.c_int]
 
 
 # Add arrays together
-c_lib.add(x, y, z, (ctypes.c_int) (N))
+c_lib.add(x, y, z, N)
 
 # Print result
 print(z)
